@@ -12,7 +12,7 @@ variable "cluster_size" {
 variable "region" {
   type        = string
   description = "the Google Cloud region to provision resources in"
-  default     = "us-central1"
+  default     = "us-east4"
 }
 
 variable "cluster_network" {
@@ -30,7 +30,7 @@ variable "cluster_subnetwork" {
 variable "zone" {
   type        = string
   description = "the Google Cloud zone to provision zonal resources in"
-  default     = "us-central1-a"
+  default     = "us-east4-a"
 }
 
 variable "data_disktype" {
