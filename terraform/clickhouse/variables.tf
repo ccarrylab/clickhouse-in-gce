@@ -6,13 +6,13 @@ variable "project_id" {
 variable "cluster_size" {
   type        = number
   description = "number of nodes in clickhouse cluster"
-  default     = 4
+  default     = 2
 }
 
 variable "region" {
   type        = string
   description = "the Google Cloud region to provision resources in"
-  default     = "us-east4"
+  default     = "us-central1"
 }
 
 variable "cluster_network" {
@@ -30,7 +30,7 @@ variable "cluster_subnetwork" {
 variable "zone" {
   type        = string
   description = "the Google Cloud zone to provision zonal resources in"
-  default     = "us-east4-a"
+  default     = "us-central1-a"
 }
 
 variable "data_disktype" {
